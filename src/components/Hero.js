@@ -122,7 +122,6 @@ const Hero = (props) => {
             <Grid container className={classes.buttonContainer} spacing={2}>
               <Grid item>
                 <Button
-                  component={Link}
                   href="/estimate"
                   className={classes.getStartedButton}
                   variant="contained"
@@ -133,7 +132,6 @@ const Hero = (props) => {
               </Grid>
               <Grid item>
                 <Button
-                  component={Link}
                   href="/revolution"
                   variant="outlined"
                   className={classes.buyNowButton}

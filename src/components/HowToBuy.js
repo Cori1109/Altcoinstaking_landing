@@ -65,8 +65,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     zIndex: 10,
     marginRight: -100,
-    
-  }
+  },
 }));
 
 const HowToBuy = (props) => {
@@ -111,7 +110,6 @@ const HowToBuy = (props) => {
             <Grid container className={classes.buttonContainer}>
               <Grid item>
                 <Button
-                  component={Link}
                   href="/estimate"
                   className={classes.getStartedButton}
                   variant="contained"

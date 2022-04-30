@@ -15,7 +15,7 @@ import Snackbar from "@material-ui/core/Snackbar";
 
 import ButtonArrow from "../src/ui/ButtonArrow";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   background: {
     backgroundImage: `url("/assets/background.jpg")`,
     backgroundPosition: "center",
@@ -102,7 +102,7 @@ export default function Contact(props) {
     backgroundColor: "",
   });
 
-  const onChange = event => {
+  const onChange = (event) => {
     let valid;
     switch (event.target.id) {
       case "email":
@@ -147,7 +147,7 @@ export default function Contact(props) {
           },
         }
       )
-      .then(res => {
+      .then((res) => {
         setLoading(false);
         setOpen(false);
         setName("");
@@ -160,7 +160,7 @@ export default function Contact(props) {
           backgroundColor: "#4BB543",
         });
       })
-      .catch(err => {
+      .catch((err) => {
         setLoading(false);
         setAlert({
           open: true,
@@ -284,7 +284,7 @@ export default function Contact(props) {
                   id="name"
                   fullWidth
                   value={name}
-                  onChange={event => setName(event.target.value)}
+                  onChange={(event) => setName(event.target.value)}
                 />
               </Grid>
               <Grid item style={{ marginBottom: "0.5em" }}>
@@ -321,7 +321,7 @@ export default function Contact(props) {
                 value={message}
                 className={classes.message}
                 id="message"
-                onChange={event => setMessage(event.target.value)}
+                onChange={(event) => setMessage(event.target.value)}
               />
             </Grid>
             <Grid item container justify="center" style={{ marginTop: "2em" }}>
@@ -383,7 +383,7 @@ export default function Contact(props) {
                 id="name"
                 fullWidth
                 value={name}
-                onChange={event => setName(event.target.value)}
+                onChange={(event) => setName(event.target.value)}
               />
             </Grid>
             <Grid item style={{ marginBottom: "0.5em" }}>
@@ -419,7 +419,7 @@ export default function Contact(props) {
               value={message}
               className={classes.message}
               id="message"
-              onChange={event => setMessage(event.target.value)}
+              onChange={(event) => setMessage(event.target.value)}
             />
           </Grid>
           <Grid
@@ -498,7 +498,6 @@ export default function Contact(props) {
               </Typography>
               <Grid container justify={matchesMD ? "center" : undefined} item>
                 <Button
-                  component={Link}
                   href="/revolution"
                   variant="outlined"
                   className={classes.learnButton}
@@ -517,7 +516,6 @@ export default function Contact(props) {
         </Grid>
         <Grid item>
           <Button
-            component={Link}
             href="/estimate"
             variant="contained"
             className={classes.estimateButton}

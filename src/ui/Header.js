@@ -250,7 +250,6 @@ export default function Header(props) {
         ))}
       </Tabs>
       <Button
-        component={Link}
         href="/estimate"
         variant="contained"
         color="secondary"
@@ -365,7 +364,6 @@ export default function Header(props) {
         <AppBar position="fixed" color="primary" className={classes.appbar}>
           <Toolbar disableGutters style={{ margin: "3rem" }}>
             <Button
-              component={Link}
               href="/"
               className={classes.logoContainer}
               onClick={() => props.setValue(0)}

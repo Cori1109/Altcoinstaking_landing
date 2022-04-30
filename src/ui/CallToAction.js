@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import ButtonArrow from "./ButtonArrow";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   learnButton: {
     ...theme.typography.learnButton,
     fontSize: "0.7rem",
@@ -81,7 +81,6 @@ export default function CallToAction(props) {
             </Typography>
             <Grid container justify={matchesSM ? "center" : undefined} item>
               <Button
-                component={Link}
                 href="/revolution"
                 variant="outlined"
                 className={classes.learnButton}
@@ -100,7 +99,6 @@ export default function CallToAction(props) {
       </Grid>
       <Grid item>
         <Button
-          component={Link}
           href="/estimate"
           variant="contained"
           className={classes.estimateButton}

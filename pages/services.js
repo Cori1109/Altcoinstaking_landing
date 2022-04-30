@@ -9,7 +9,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import ButtonArrow from "../src/ui/ButtonArrow";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   specialText: {
     fontFamily: "Pacifico",
     color: theme.palette.common.orange,
@@ -105,7 +105,6 @@ export default function Services(props) {
               {matchesSM ? null : <br />} either mobile platform.
             </Typography>
             <Button
-              component={Link}
               href="/mobileapps"
               variant="outlined"
               className={classes.learnButton}
@@ -156,7 +155,6 @@ export default function Services(props) {
                 <span className={classes.specialText}>celebration.</span>
               </Typography>
               <Button
-                component={Link}
                 href="/customsoftware"
                 variant="outlined"
                 className={classes.learnButton}
@@ -206,7 +204,6 @@ export default function Services(props) {
               Optimized for Search Engines, built for speed.
             </Typography>
             <Button
-              component={Link}
               href="/websites"
               variant="outlined"
               className={classes.learnButton}
